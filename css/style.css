@@ -184,6 +184,33 @@ section p {
     color: #333;
 }
 
+/* Adicione estas regras ao seu arquivo style.css */
+
+/* Estilo para a página CoralGuard */
+#coralguard {
+    padding: 2rem;
+    background: #e0f7fa; /* Light blue */
+    color: #005f6b;
+}
+
+#coralguard h2, #coralguard h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#coralguard p, #coralguard ul {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#coralguard ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .menu {
