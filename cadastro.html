@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoralGuard - Cadastro</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">CoralGuard</div>
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">HOME</a></li>
+                <li class="menu-item"><a href="sobre-nos.html">SOBRE NÓS</a></li>
+                <li class="menu-item"><a href="coralguard.html">CORALGUARD</a></li>
+                <li class="menu-item"><a href="cadastro.html">CADASTRO</a></li>
+                <li class="menu-item"><a href="download.html">DOWNLOAD</a></li>
+                <li class="menu-item"><a href="contato.html">CONTATO</a></li>
+                <li class="menu-item"><a href="login.html">LOGIN</a></li>
+            </ul>
+            <div class="menu-mobile">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <form action="submit_cadastro.php" method="post" class="form-cadastro">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmar-senha">Confirmar Senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Cadastrar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

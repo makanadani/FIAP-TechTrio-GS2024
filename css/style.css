@@ -211,6 +211,65 @@ section p {
     margin-left: 2rem;
 }
 
+/* Adicione estas regras ao seu arquivo style.css */
+
+/* Estilo para a página de Cadastro */
+#cadastro {
+    padding: 2rem;
+    background: #e0f7fa; /* Light blue */
+    color: #005f6b;
+    text-align: center;
+}
+
+#cadastro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-cadastro {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #007B5E; /* Ocean green */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #005f47;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .menu {
