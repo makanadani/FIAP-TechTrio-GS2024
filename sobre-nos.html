@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoralGuard - Sobre Nós</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
                 <li class="menu-item"><a href="download.html">DOWNLOAD</a></li>
                 <li class="menu-item"><a href="contato.html">CONTATO</a></li>
                 <li class="menu-item dropdown">
-                    <a href="login.html" class="dropdown-toggle">LOGIN</a>
+                    <a href="#" class="dropdown-toggle">LOGIN</a>
                     <ul class="dropdown-menu">
                         <li class="menu-item"><a href="perfil.html">Perfil</a></li>
                         <li class="menu-item"><a href="observacoes.html">Minhas Observações</a></li>
@@ -34,26 +35,62 @@
             </div>
         </nav>
     </header>
-    <section id="about-us">
-        <h2>Sobre Nós</h2>
-        <p>Conheça a equipe dedicada por trás do CoralGuard.</p>
-        <div class="team">
-            <div class="team-member">
-                <img src="./img/marina.jpg" alt="Marina">
-                <h3>Marina</h3>
-                <p>Descrição sobre a Marina.</p>
+    <div class="hero" style="height: auto;">
+        <div class="overlay"></div>
+        <section id="about-us" class="content">
+            <h2>Sobre Nós</h2>
+            <p>O Tech Trio é um grupo de alunos da Unidade Paulista da Faculdade de Informática e Administração Paulista 
+                (FIAP), cursando o primeiro ano do curso presencial de Análise e Desenvolvimento de Sistemas (turma 1TDSPX).</p>
+            <div class="team">
+                <div class="team-member">
+                    <img src="./img/marina.jpg" alt="Marina">
+                    <h4>Marina Yumi Kanadani</h4>
+                    <p>Marina é a representante da equipe Tech Trio e responsável pelo Front-End, Banco de Dados 
+                        e Python no projeto CoralGuard. Como estudante, ela aplica seus conhecimentos adquiridos em sala 
+                        de aula para criar interfaces de usuário intuitivas e visualmente atraentes. Marina também 
+                        trabalha no desenvolvimento e manutenção do banco de dados do CoralGuard, garantindo que os 
+                        dados sejam armazenados e acessados de forma eficiente. Além disso, ela utiliza Python 
+                        para desenvolver scripts e automações que melhoram a funcionalidade e a performance 
+                        do CoralGuard.</p>
+                </div>
+                <div class="team-member">
+                    <img src="./img/rodrigo.jpg" alt="Rodrigo">
+                    <h4>Rodrigo Santos Freitas</h4>
+                    <p>Rodrigo é responsável pelo desenvolvimento em Java e auxílio no Front-End no projeto CoralGuard. 
+                        Ele utiliza suas habilidades em programação Java para implementar funcionalidades essenciais do 
+                        sistema, assegurando a robustez e eficiência do código. Além disso, Rodrigo colabora ativamente 
+                        no desenvolvimento do Front-End, trabalhando em estreita parceria com a equipe para criar 
+                        interfaces de usuário intuitivas e visualmente agradáveis. Seu comprometimento e conhecimento 
+                        técnico são vitais para o sucesso do CoralGuard, contribuindo diretamente para a missão de 
+                        preservação dos recifes de coral.</p>
+                </div>
+                <div class="team-member">
+                    <img src="./img/gabriela.jpg" alt="Gabriela">
+                    <h4>Gabriela Liborio Souza</h4>
+                    <p>Gabriela é a responsável pela gestão de projetos, desenvolvimento do chatbot e auxílio no Front-End
+                        no projeto CoralGuard. Como estudante, ela utiliza suas habilidades organizacionais para coordenar
+                        as atividades da equipe, assegurando que os prazos sejam cumpridos e que o projeto avance de 
+                        maneira eficiente. Além disso, Gabriela se dedica ao desenvolvimento do chatbot, uma ferramenta 
+                        crucial para a interação com os usuários do CoralGuard, e também auxilia no desenvolvimento do 
+                        Front-End, contribuindo para criar interfaces intuitivas. Sua capacidade de gerenciar projetos 
+                        e desenvolver soluções tecnológicas inovadoras é essencial para o sucesso do CoralGuard, 
+                        contribuindo para a proteção e preservação dos recifes de coral.</p>
+                </div>
             </div>
-            <div class="team-member">
-                <img src="./img/rodrigo.jpg" alt="Rodrigo">
-                <h3>Rodrigo</h3>
-                <p>Descrição sobre o Rodrigo.</p>
-            </div>
-            <div class="team-member">
-                <img src="./img/gabriela.jpg" alt="Gabriela">
-                <h3>Gabriela</h3>
-                <p>Descrição sobre a Gabriela.</p>
-            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>CoralGuard é uma plataforma dedicada à preservação e monitoramento de recifes de coral. Nossa missão é proteger esses ecossistemas vitais para as gerações futuras, utilizando tecnologia de ponta e promovendo a colaboração entre comunidades e cientistas.</p>
+            <ul class="socials">
+                <li><a href="#"><img src="./img/facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./img/twitter-icon.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="./img/instagram-icon.png" alt="Instagram"></a></li>
+            </ul>
         </div>
-    </section>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CoralGuard. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
