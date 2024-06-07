@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoralGuard - Contato</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">CoralGuard</div>
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">HOME</a></li>
+                <li class="menu-item"><a href="sobre-nos.html">SOBRE NÓS</a></li>
+                <li class="menu-item"><a href="coralguard.html">CORALGUARD</a></li>
+                <li class="menu-item"><a href="cadastro.html">CADASTRO</a></li>
+                <li class="menu-item"><a href="download.html">DOWNLOAD</a></li>
+                <li class="menu-item"><a href="contato.html">CONTATO</a></li>
+                <li class="menu-item"><a href="login.html">LOGIN</a></li>
+            </ul>
+            <div class="menu-mobile">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Se você tiver alguma dúvida ou gostaria de saber mais sobre o CoralGuard, entre em contato conosco preenchendo o formulário abaixo:</p>
+        <form action="submit_contato.php" method="post" class="form-contato">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Enviar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
