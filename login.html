@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoralGuard - Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">CoralGuard</div>
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">HOME</a></li>
+                <li class="menu-item"><a href="sobre-nos.html">SOBRE NÓS</a></li>
+                <li class="menu-item"><a href="coralguard.html">CORALGUARD</a></li>
+                <li class="menu-item"><a href="cadastro.html">CADASTRO</a></li>
+                <li class="menu-item"><a href="download.html">DOWNLOAD</a></li>
+                <li class="menu-item"><a href="contato.html">CONTATO</a></li>
+                <li class="menu-item dropdown">
+                    <a href="login.html" class="dropdown-toggle">LOGIN</a>
+                    <ul class="dropdown-menu">
+                        <li class="menu-item"><a href="perfil.html">Perfil</a></li>
+                        <li class="menu-item"><a href="observacoes.html">Minhas Observações</a></li>
+                        <li class="menu-item"><a href="recifes.html">Recifes</a></li>
+                        <li class="menu-item"><a href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="menu-mobile">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="login">
+        <h2>Login</h2>
+        <form action="submit_login.php" method="post" class="form-login">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Login</button>
+            </div>
+            <div class="form-group">
+                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

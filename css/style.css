@@ -1,3 +1,4 @@
+/* Reset and Box-sizing */
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +6,12 @@
     font-family: Arial, sans-serif;
 }
 
+/* Body Styling */
 body {
     line-height: 1.6;
 }
 
+/* Header Styling */
 header {
     width: 100%;
     background: #007B5E; /* Ocean green */
@@ -29,6 +32,7 @@ header {
     font-weight: bold;
 }
 
+/* Menu Styling */
 .menu {
     list-style: none;
     display: flex;
@@ -48,6 +52,7 @@ header {
     color: #e0f7fa;
 }
 
+/* Mobile Menu Styling */
 .menu-mobile {
     display: none;
     flex-direction: column;
@@ -62,6 +67,7 @@ header {
     transition: all 0.3s ease;
 }
 
+/* Hero Section Styling */
 .hero {
     height: 100vh;
     background: url('../img/coral.jpg') no-repeat center center/cover;
@@ -113,36 +119,28 @@ header {
     background: #005f47;
 }
 
+/* Section Styling */
 section {
     padding: 2rem;
     background: #e0f7fa; /* Light blue */
     color: #005f6b;
 }
 
-section h2 {
+section h2, #about-us h2, #coralguard h2, #coralguard h3, #download h2, #cadastro h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-section p {
+section p, #coralguard p, #coralguard ul, #download p, #cadastro p {
     font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
 }
 
+/* About Us Section */
 #about-us {
-    padding: 2rem;
-    background: #e0f7fa; /* Light blue */
-    color: #005f6b;
     text-align: center;
-}
-
-#about-us h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-#about-us p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
 }
 
 .team {
@@ -184,49 +182,8 @@ section p {
     color: #333;
 }
 
-/* Adicione estas regras ao seu arquivo style.css */
-
-/* Estilo para a página CoralGuard */
-#coralguard {
-    padding: 2rem;
-    background: #e0f7fa; /* Light blue */
-    color: #005f6b;
-}
-
-#coralguard h2, #coralguard h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-#coralguard p, #coralguard ul {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-#coralguard ul {
-    list-style: disc;
-    margin-left: 2rem;
-}
-
-/* Adicione estas regras ao seu arquivo style.css */
-
-/* Estilo para a página de Cadastro */
-#cadastro {
-    padding: 2rem;
-    background: #e0f7fa; /* Light blue */
-    color: #005f6b;
-    text-align: center;
-}
-
-#cadastro h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.form-cadastro {
+/* Form Styling */
+.form-cadastro, .form-contato {
     max-width: 500px;
     margin: 0 auto;
     background: #fff;
@@ -245,7 +202,7 @@ section p {
     margin-bottom: 0.5rem;
 }
 
-.form-group input {
+.form-group input, .form-group textarea {
     width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
@@ -253,8 +210,16 @@ section p {
     border-radius: 5px;
 }
 
-.btn {
-    display: inline-block;
+/* Download Section */
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.download-btn {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     color: #fff;
@@ -265,8 +230,71 @@ section p {
     transition: background 0.3s ease;
 }
 
-.btn:hover {
+.download-btn:hover {
     background: #005f47;
+}
+
+#recifes {
+    padding: 2rem;
+    background: #e0f7fa; /* Light blue */
+    color: #005f6b;
+    text-align: center;
+}
+
+.recifes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recife-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recife-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recife-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.recife-item p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.medicoes-recife {
+    margin-top: 1rem;
+}
+
+.medicoes-recife h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #005f6b;
+}
+
+.medicoes-recife p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.medicoes-recife hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 0.5rem 0;
 }
 
 
@@ -294,7 +322,7 @@ section p {
         font-size: 1.5rem;
         padding: 1rem;
         display: block;
-        color: #fff; /* Ensure text color is white */
+        color: #fff;
     }
 
     .menu.open {
