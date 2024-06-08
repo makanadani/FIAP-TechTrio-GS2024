@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoralGuard - Download</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
     <header>
@@ -20,11 +21,13 @@
                 <li class="menu-item dropdown">
                     <a href="login.html" class="dropdown-toggle">LOGIN</a>
                     <ul class="dropdown-menu">
-                        <li class="menu-item"><a href="perfil.html">Perfil</a></li>
-                        <li class="menu-item"><a href="observacoes.html">Minhas Observações</a></li>
-                        <li class="menu-item"><a href="recifes.html">Recifes</a></li>
-                        <li class="menu-item"><a href="logout.html">Logout</a></li>
+                        <li class="menu-item"><a href="perfil.html">PERFIL</a></li>
+                        <li class="menu-item"><a href="observacao.html">OBSERVAÇÕES</a></li>
+                        <li class="menu-item"><a href="recifes.html">RECIFES</a></li>
+                        <li class="menu-item"><a href="index.html">LOGOUT</a></li>
                     </ul>
+                </li>
+            </ul>
                 </li>
             </ul>
             <div class="menu-mobile">
@@ -34,18 +37,34 @@
             </div>
         </nav>
     </header>
-    <section id="download">
-        <h2>Download</h2>
-        <p>Baixe o aplicativo CoralGuard e junte-se a nós na missão de proteger os recifes de coral.</p>
-        <div class="download-buttons">
-            <a href="#" class="btn download-btn">Download para Android</a>
-            <a href="#" class="btn download-btn">Download para iOS</a>
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Download</h1>
+            <p>Baixe nossos materiais e aplicativos para começar a contribuir na preservação dos recifes de corais.</p>
         </div>
-        <p>Disponível também para desktop:</p>
+    </div>
+    <section id="download" class="content-section">
+        <h2>Materiais Disponíveis para Download</h2>
         <div class="download-buttons">
-            <a href="#" class="btn download-btn">Download para Windows</a>
-            <a href="#" class="btn download-btn">Download para MacOS</a>
+            <a href="#" class="btn download-btn">Baixar Aplicativo para Android</a>
+            <a href="#" class="btn download-btn">Baixar Aplicativo para iOS</a>
+            <a href="#" class="btn download-btn">Baixar Guia de Usuário</a>
+            <a href="#" class="btn download-btn">Baixar Relatório Anual</a>
         </div>
     </section>
+    <footer>
+        <div class="footer-content">
+            <p>Siga-nos nas redes sociais!</p>
+            <ul class="socials">
+                <li><a href="#"><img src="./img/fblogo.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./img/xlogo.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="./img/instalogo.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CoralGuard. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoralGuard - Observações</title>
+    <title>CoralGuard - Perfil</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
     <header>
@@ -37,58 +38,31 @@
     <div class="hero">
         <div class="overlay"></div>
         <div class="content">
-            <h1>Observações</h1>
-            <p>Preencha o formulário abaixo para registrar suas observações sobre os recifes de coral.</p>
+            <h1>Perfil</h1>
+            <p>Visualize e altere suas informações pessoais.</p>
         </div>
     </div>
-    <section id="observacao" class="content-section">
-        <h2>Registrar Nova Observação</h2>
-        <form action="submit_observacao.php" method="post" class="form-contato">
+    <section id="profile" class="content-section">
+        <h2>Dados do Usuário</h2>
+        <form id="profileForm" class="form-perfil">
             <div class="form-group">
-                <label for="localizacao">Localização:</label>
-                <input type="text" id="localizacao" name="localizacao" required>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" value="Nome Fictício" required>
             </div>
             <div class="form-group">
-                <label for="data">Data da Observação:</label>
-                <input type="date" id="data" name="data" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="email@exemplo.com" required>
             </div>
             <div class="form-group">
-                <label for="hora">Hora Aproximada:</label>
-                <input type="time" id="hora" name="hora" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" value="senha123" required>
             </div>
             <div class="form-group">
-                <label for="descricao">Descrição:</label>
-                <textarea id="descricao" name="descricao" rows="5" required></textarea>
+                <label for="confirmPassword">Confirme a Senha:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" value="senha123" required>
             </div>
-            <div class="form-group">
-                <label for="foto">Foto:</label>
-                <input type="file" id="foto" name="foto" accept="image/*">
-            </div>
-            <div class="form-group">
-                <label for="video">Vídeo:</label>
-                <input type="file" id="video" name="video" accept="video/*">
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn">Registrar Observação</button>
-            </div>
+            <button type="submit" class="btn">Salvar Alterações</button>
         </form>
-    </section>
-    <section id="observacoes-registradas" class="content-section">
-        <h2>Observações Registradas</h2>
-        <div class="observacao">
-            <h3>Localização: Recife de Coral A</h3>
-            <p><strong>Data:</strong> 2024-06-01</p>
-            <p><strong>Hora:</strong> 10:00</p>
-            <p><strong>Descrição:</strong> Observação sobre a saúde do recife e a presença de branqueamento.</p>
-            <img src="./img/coralmorto.png" alt="Foto do Recife A" class="observacao-imagem">
-        </div>
-        <div class="observacao">
-            <h3>Localização: Recife de Coral B</h3>
-            <p><strong>Data:</strong> 2024-06-05</p>
-            <p><strong>Hora:</strong> 14:30</p>
-            <p><strong>Descrição:</strong> Observação sobre a presença de poluentes e resíduos no recife.</p>
-            <img src="./img/lixo.jpeg" alt="Foto do Recife B" class="observacao-imagem">
-        </div>
     </section>
     <footer>
         <div class="footer-content">

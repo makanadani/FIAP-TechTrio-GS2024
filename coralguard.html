@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoralGuard - CoralGuard</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
     <header>
@@ -20,10 +21,10 @@
                 <li class="menu-item dropdown">
                     <a href="login.html" class="dropdown-toggle">LOGIN</a>
                     <ul class="dropdown-menu">
-                        <li class="menu-item"><a href="perfil.html">Perfil</a></li>
-                        <li class="menu-item"><a href="observacoes.html">Minhas Observações</a></li>
-                        <li class="menu-item"><a href="recifes.html">Recifes</a></li>
-                        <li class="menu-item"><a href="logout.html">Logout</a></li>
+                        <li class="menu-item"><a href="perfil.html">PERFIL</a></li>
+                        <li class="menu-item"><a href="observacao.html">OBSERVAÇÕES</a></li>
+                        <li class="menu-item"><a href="recifes.html">RECIFES</a></li>
+                        <li class="menu-item"><a href="index.html">LOGOUT</a></li>
                     </ul>
                 </li>
             </ul>
@@ -34,25 +35,71 @@
             </div>
         </nav>
     </header>
-    <section id="coralguard">
-        <h2>CoralGuard</h2>
-        <p>O CoralGuard é uma plataforma inovadora dedicada à preservação e monitoramento de recifes de coral. Utilizando tecnologia de ponta, buscamos proteger estes ecossistemas vitais para as gerações futuras.</p>
-        <h3>Funcionalidades</h3>
-        <ul>
-            <li>Monitoramento biométrico, ambiental e comportamental de corais.</li>
-            <li>Utilização de IA e Machine Learning para prever e mitigar ameaças.</li>
-            <li>Facilitação da colaboração entre mergulhadores, moradores da comunidade local, turistas, cientistas e ONGs.</li>
-            <li>Envio de dados e alertas a instituições governamentais e empresas.</li>
-            <li>Manutenção de condições favoráveis à preservação e crescimento dos recifes de corais.</li>
-        </ul>
-        <h3>Como Funciona</h3>
-        <p>A plataforma CoralGuard integra sensores avançados instalados em diversos recifes para coletar dados em tempo real sobre a saúde dos corais e as condições ambientais. Esses dados são analisados por algoritmos de IA para detectar possíveis ameaças e gerar alertas quando necessário. Os colaboradores também podem enviar fotos, vídeos e observações através da plataforma, que são validados por instituições parceiras antes de serem adicionados ao banco de dados.</p>
-        <h3>Impacto Esperado</h3>
-        <p>Com a implementação do CoralGuard, esperamos aumentar significativamente a eficácia dos esforços de conservação dos recifes de coral. A coleta e análise de dados em tempo real permitirá uma resposta rápida a ameaças emergentes, enquanto o engajamento da comunidade global ajudará a ampliar a conscientização e o apoio à causa.</p>
-        <h3>Equipe e Colaboradores</h3>
-        <p>O CoralGuard é desenvolvido por uma equipe dedicada de profissionais apaixonados pela preservação ambiental. Trabalhamos em colaboração com cientistas, ONGs e governos locais para garantir que nossa plataforma seja eficaz e amplamente adotada.</p>
-        <h3>Contato</h3>
-        <p>Para saber mais sobre o CoralGuard, colaborar conosco ou apoiar nossa iniciativa, entre em contato através da nossa página de <a href="contato.html">contato</a>.</p>
-    </section>
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <section id="coralguard" class="content-section">
+                <h2>Introdução</h2>
+                <p>Os recifes de corais são cruciais para a saúde dos ecossistemas marinhos, proporcionando habitat para inúmeras espécies e protegendo as costas de erosão e tempestades. 
+                    Eles desempenham um papel vital na proteção costeira e na economia global, sustentando indústrias de turismo e pesca. No entanto, enfrentam ameaças significativas como 
+                    mudanças climáticas, poluição e pesca destrutiva. A degradação dos recifes afeta a biodiversidade marinha e as economias locais. Atualmente, os sistemas de monitoramento 
+                    de corais focam principalmente em dados ambientais, sem integrar dados biométricos dos corais e comportamentais da fauna marinha, e não utilizam tecnologias avançadas de 
+                    inteligência artificial para prever eventos de risco, limitando a eficácia das medidas de conservação.</p>
+                <h2>CoralGuard</h2>
+                <p>O CoralGuard é uma plataforma inovadora que combina monitoramento biométrico, ambiental e comportamental de corais, utilizando IA e Machine Learning para prever e mitigar 
+                    ameaças. Facilita a colaboração entre comunidades locais, turistas, pesquisadores e ONGs, promovendo um engajamento mais eficaz na conservação dos recifes de corais. A 
+                    plataforma integra dados de múltiplas fontes para oferecer uma visão abrangente do estado dos recifes, promovendo a detecção precoce de problemas e a implementação de 
+                    medidas preventivas.</p>
+                <h2>Objetivos</h2>
+                <p>O CoralGuard visa promover práticas sustentáveis e a conservação dos recifes de corais através de monitoramento avançado e análise preditiva, disponibilizando informações 
+                    para conscientizar a comunidade. Além disso, propicia o envolvimento de moradores, turistas, pesquisadores e ONGs na coleta de dados, criando uma rede de observadores. Por 
+                    fim, leva à colaboração científica ao fornecer dados para justificar intervenções que melhorem as condições dos oceanos.</p>
+                <h3>Monitoramento Completo</h3>
+                <p><strong>Parâmetros Ambientais:</strong> Sensores IoT coletam dados em tempo real sobre temperatura, pH, salinidade, turbidez, níveis de nutrientes (nitrogênio e fósforo), 
+                    e oxigênio dissolvido na água. Esses parâmetros são essenciais para avaliar a saúde dos recifes de corais, permitindo uma análise contínua das condições ambientais e 
+                    identificando rapidamente quaisquer desvios que possam representar ameaças aos ecossistemas marinhos.</p>
+                <p><strong>Dados Biométricos:</strong> Monitoramento detalhado da taxa de crescimento dos corais, densidade de pólipos e eficácia fotossintética dos corais. Esses dados 
+                    fornecem uma visão abrangente sobre a saúde dos corais, permitindo identificar sinais precoces de estresse e outros problemas fisiológicos que podem indicar deterioração 
+                    do recife.</p>
+                <p><strong>Observações de Colaboradores:</strong> Coleta de dados a partir de colaboradores cadastrados, incluindo moradores locais, turistas, pesquisadores e representantes 
+                    de ONGs. Esses colaboradores podem registrar observações sobre a presença de poluentes, alterações visíveis nos corais, avistamento de espécies ameaçadas, atividades 
+                    humanas destrutivas e fenômenos naturais. As observações são validadas por instituições responsáveis para garantir a precisão dos dados antes de serem incorporadas ao 
+                    banco de dados. Esse sistema de coleta participativa não só enriquece o banco de dados, mas também promove a conscientização e o engajamento da comunidade na conservação 
+                    dos recifes de corais.</p>      
+                <h3>Análise Preditiva</h3>
+                <p>Utilização de algoritmos de Machine Learning para prever eventos de risco, como branqueamento de corais, surtos de doenças e alterações significativas na qualidade da água. 
+                    Esses algoritmos analisam grandes volumes de dados históricos e em tempo real, identificando padrões e tendências que podem levar a eventos adversos. Desta forma, o sistema 
+                    pode sugerir intervenções emergenciais para evitar ou mitigar os impactos desses eventos, protegendo os recifes de danos maiores.</p>
+                <h3>Sistema de Alerta</h3>
+                <p>CoralGuard emite notificações em tempo real para pesquisadores, autoridades e outros stakeholders sobre condições de risco iminente. O sistema de alerta é projetado para ser 
+                    altamente responsivo, permitindo que ações rápidas e eficazes sejam tomadas para proteger os recifes. As notificações incluem detalhes sobre o tipo de risco, a localização 
+                    afetada e as possíveis ações recomendadas, garantindo que as respostas sejam bem informadas e coordenadas.</p>
+                <h3>Plataforma de Colaboração Gamificada</h3>
+                <p>O CoralGuard permite o cadastro de colaboradores voluntários, incluindo moradores locais, turistas, pesquisadores e representantes de ONGs, para engajamento comunitário 
+                    gamificado. A plataforma utiliza um sistema de pontos e níveis para recompensar contribuições e promover a conscientização ambiental.</p>
+                <p><strong>Pontos e Níveis:</strong> Usuários ganham pontos ao fazer observações, receber validações e participar de campanhas de conscientização. Pontos acumulados permitem 
+                    aos usuários atingir níveis e ganhar medalhas (“badges”) que refletem seu compromisso com a conservação dos recifes de corais.</p>
+                <p><strong>Categorias:</strong> Observações são divididas em categorias, como presença de poluentes, alterações nos corais, visualização de espécies ameaçadas, atividades 
+                    humanas destrutivas, ações de limpeza ou restauração, e fenômenos naturais. Cada categoria tem uma pontuação específica, incentivando a diversificação das observações.</p>
+                <p><strong>Validação:</strong> Observações são validadas por instituições responsáveis para garantir a precisão dos dados. Somente observações validadas contribuem para a 
+                    pontuação do usuário, promovendo a qualidade e a veracidade das informações.</p>
+                <p><strong>Benefícios Exclusivos:</strong> Usuários recebem benefícios como brindes, acesso a webinars, workshops, eventos sobre conservação marinha, oportunidades de 
+                    voluntariado, e descontos em cursos e revistas científicas, conforme o nível atingido. Esses benefícios aumentam a motivação e o engajamento contínuo dos usuários.</p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>Siga-nos nas redes sociais!</p>
+            <ul class="socials">
+                <li><a href="#"><img src="./img/fblogo.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./img/xlogo.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="./img/instalogo.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CoralGuard. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
