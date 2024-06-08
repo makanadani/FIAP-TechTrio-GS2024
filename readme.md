@@ -15,9 +15,9 @@ Impacto Esperado
 Com a implementação do CoralGuard, esperamos aumentar significativamente a eficácia dos esforços de conservação dos recifes de coral. A coleta e análise de dados em tempo real permitirá uma resposta rápida a ameaças emergentes, enquanto o engajamento da comunidade global ajudará a ampliar a conscientização e o apoio à causa.
 
 Equipe
-Marina: 
-Rodrigo: 
-Gabriela: 
+Marina Yumi Kanadani
+Rodrigo Santos Freitas
+Gabriela Liborio Souza
 
 Páginas Principais
 Home: Página inicial com uma visão geral do projeto.
